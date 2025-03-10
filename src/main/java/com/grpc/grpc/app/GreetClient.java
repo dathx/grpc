@@ -36,7 +36,7 @@ public class GreetClient {
 
     public static void main(String[] args) throws Exception {
         String greeting = "Chao";
-        String username = "Fuc";
+        String username = "Dat";
         String serverAddress = "localhost:50051";
         ManagedChannel channel = ManagedChannelBuilder.forTarget(serverAddress)
                 .usePlaintext()
