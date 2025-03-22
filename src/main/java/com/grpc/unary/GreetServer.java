@@ -1,4 +1,4 @@
-package com.grpc.grpc.app;
+package com.grpc.unary;
 
 import com.greeting.ClientRequest;
 import com.greeting.ServerResponse;
@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 import com.greeting.GreeterGrpc;
-import com.greeting.ClientRequest;
-import com.greeting.ServerResponse;
 
 public class GreetServer {
     private static final Logger logger = Logger.getLogger(GreetServer.class.getName());

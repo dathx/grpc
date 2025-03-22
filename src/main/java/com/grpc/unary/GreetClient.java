@@ -1,4 +1,4 @@
-package com.grpc.grpc.app;
+package com.grpc.unary;
 
 import io.grpc.Channel;
 import io.grpc.ManagedChannel;
