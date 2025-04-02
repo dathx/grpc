@@ -1,0 +1,30 @@
+syntax = "proto3";
+option java_package = "com.book";
+option java_multiple_files = true;
+import "student.proto";
+
+message Book {
+  string id = 1;
+  string title = 2;
+  repeated Author author = 3;
+  string publisher = 4;
+  optional int32 year = 5;
+  StudentRequest studentRequest = 6;
+
+}
+message Author {
+  string name = 1;
+//  string email = 2;
+  reserved "email";
+  EnumRequest enumRequest = 3;
+  map<string, string> map = 4;
+
+}
+
+
+enum EnumRequest {
+  UNKNOWN = 0;
+  FIRST = 1;
+  SECOND = 2;
+  THIRD = 3;
+}

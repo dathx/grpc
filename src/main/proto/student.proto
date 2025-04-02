@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "com.student";
+option java_multiple_files = true;
+
+// Define the StudentService
+service StudentService {
+  rpc findStudent (StudentRequest) returns (StudentResponse){}
+}
+
+message StudentRequest {
+  string studentId = 1;
+  string studentName = 2;
+  string studentEmail = 3;
+  string studentPhoneNumber = 4;
+  int32 studentAge = 5;
+  int64 salary = 6;
+  bool gender = 7;
+}
+
+message StudentResponse {
+   string hello = 1;
+}
