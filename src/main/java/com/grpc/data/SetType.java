@@ -35,6 +35,7 @@ public class SetType {
         linkedSet.add("apple");
         linkedSet.add("banana");
         linkedSet.add("banana");
+        linkedSet.add("strawberry");
         System.out.println(linkedSet);
         linkedSet.clear();
     }
